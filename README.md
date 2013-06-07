@@ -10,6 +10,6 @@ Utilisation
 ---
 1. Ouvrir le fichier PDF.
 2. Remplir les champs.
-3. Ctrl + S (Sauvegarder).
-4. Ctrl + P Imprimer.
+3. Ctrl + S, Sauvegarder.
+4. Ctrl + P, Imprimer.
 
