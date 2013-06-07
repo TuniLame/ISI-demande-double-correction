@@ -1,0 +1,166 @@
+\documentclass{article}
+\usepackage[left=20mm,right=20mm,top=10mm,bottom=10mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage[scaled=.89]{helvet}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{pslatex}
+\usepackage{fancybox}
+\usepackage{color}
+\setcounter{secnumdepth}{0}
+
+\hypersetup{pdfborder={1 1 1}}
+\def\LayoutTextField#1#2{\makebox[8em][l]{#1: }\raisebox{-.5ex}{#2}}
+\def\LayoutChoiceField#1#2{\makebox[12em][l]{#1: }#2}
+\renewcommand{\MakeTextField}[2]{{\vbox to #2{\vfill\hbox to #1{\hrulefill}}}}
+\newdimen\longline
+\longline=\textwidth\advance\longline-10em
+
+\begin{document}
+\renewcommand{\thepage}{}
+
+\noindent\begin{Form}
+\begin{minipage}[l]{103mm}
+\begin{flushleft} 
+\includegraphics[width=4cm]{LogoISI}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[r]{7cm}
+\begin{flushright}
+\TextField[name=date,width=29mm,height=5mm,borderwidth=1,bordercolor={0 0 0},backgroundcolor={1 1 1}]{Ariana, le}
+\end{flushright}
+\end{minipage}
+\vspace{7mm}
+
+\begin{center}
+ \huge{Demande d'une double correction des copies d'examen}
+ \end{center}
+\vspace{7mm}
+
+\section{Partie réservée à l'étudiant}
+\vspace{5mm}
+\hspace{4.4mm}
+
+\begin{center}
+\TextField[name=num_cin,width=\longline,borderwidth=1,bordercolor={0 0 0},backgroundcolor={1 1 1}]{Numéro CIN}\vskip1ex
+\TextField[name=nom,width=\longline,borderwidth=1,bordercolor={0 0 0},backgroundcolor={1 1 1}]{Nom}\vskip1ex
+\TextField[name=prenom,width=\longline,borderwidth=1,bordercolor={0 0 0},backgroundcolor={1 1 1}]{Prénom}\vskip1ex
+\TextField[name=niv_etudes,width=86mm,borderwidth=1,bordercolor={0 0 0},backgroundcolor={1 1 1}]{Niveau d'étude}
+\hspace{10mm}
+\TextField[name=groupe,width=15mm,borderwidth=1,bordercolor={0 0 0},backgroundcolor={1 1 1}]{Groupe}\vskip1ex
+\vspace{8mm}
+\TextField[name=matier,width=86mm,borderwidth=1,bordercolor={0 0 0},backgroundcolor={1 1 1}]{Matière}
+\hspace{10mm}
+\TextField[name=salle,width=15mm,borderwidth=1,bordercolor={0 0 0},backgroundcolor={1 1 1}]{Salle}\vskip1ex
+\end{center}
+\end{Form}
+
+\vspace{5mm}
+\begin{minipage}[]{200mm}
+\begin{minipage}[l]{133mm}
+\boxput*(0 ,1){\colorbox{white}{\textbf{Important}}}{\setlength{\fboxsep}{6pt}\fbox{
+\begin{minipage}[c]{120mm}
+\begin{center}
+La nouvelle note (\textcolor[rgb]{0.55,0,0}{égale ou supérieure ou inférieur à l'ancienne note}) est comptabilisée dans le calcul de la moyenne de la matière.
+\end{center}
+\end{minipage}}}
+\end{minipage}
+\begin{minipage}[r]{33mm}
+\begin{center}
+ Signature de l'étudiant\\
+ \vspace*{3mm}
+\dotfill
+\end{center}
+\end{minipage}
+\end{minipage}
+
+\vspace{7mm}
+
+\section{Partie réservée à l'administration}
+
+\begin{center}
+\boxput*(0 ,1){\colorbox{white}{\textbf{Code copie}}}{\setlength{\fboxsep}{6pt}\fbox{
+\begin{minipage}[l]{159mm}
+\vspace{2mm}
+\hspace{1mm}
+\dotfill
+\vspace{2mm}
+\end{minipage}}}
+
+\vspace{7mm}
+
+\boxput*(0 ,1){\colorbox{white}{\textbf{Décision de l'enseignant correcteur}}}{\setlength{\fboxsep}{6pt}\fbox{
+\begin{minipage}[l]{90mm}
+\vspace{2mm}
+\hspace{1mm}
+
+.\dotfill .\\
+.\dotfill .\\
+.\dotfill .\\
+.\dotfill .\\
+.\dotfill .\\
+.\dotfill .\\
+.\dotfill .\\
+.\dotfill .\\
+.\dotfill .\\
+.\dotfill .\\
+
+\vspace{0mm}
+
+ Nom: \dotfill\\
+\vspace*{0mm}
+
+Prénom: \dotfill\\
+
+\begin{center}
+\begin{minipage}[c]{38mm}
+\begin{center}
+ Signature de l'enseignant\\
+ \vspace*{3mm}
+\dotfill
+\end{center}
+\end{minipage}
+\end{center}
+ \vspace*{3mm}
+\end{minipage}}}
+\boxput*(0 ,1){\colorbox{white}{\textbf{Avis du directeur de département}}}{\setlength{\fboxsep}{6pt}\fbox{
+\begin{minipage}[l]{63mm}
+\vspace{2mm}
+\hspace{1mm}
+
+.\dotfill .\\
+.\dotfill .\\
+.\dotfill .\\
+.\dotfill .\\
+.\dotfill .\\
+.\dotfill .\\
+.\dotfill .\\
+.\dotfill .\\
+.\dotfill .\\
+.\dotfill .\\
+
+\vspace{0mm}
+
+ Nom: \dotfill\\
+\vspace*{0mm}
+
+Prénom: \dotfill\\
+
+\begin{center}
+\begin{minipage}[c]{55mm}
+\begin{center}
+ Signature de directeur de département\\
+ \vspace*{3mm}
+\dotfill
+\end{center}
+\end{minipage}
+\end{center}
+ \vspace*{3mm}
+\end{minipage}}}
+\end{center}
+
+\end{document}
