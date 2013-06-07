@@ -1,6 +1,6 @@
 Description
 ---
-Un formulaire en tex éditable directement depuis le pdf pour effectuer une demande de double correction au sein de l'Insctitut Supérieur d'Informatique (ISI), Ariana, Tunisie.
+Un formulaire en tex éditable directement depuis le pdf pour effectuer une demande de double correction au sein de l'Institut Supérieur d'Informatique (ISI), Ariana, Tunisie.
 
 Utilisation
 ---
